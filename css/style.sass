@@ -26,7 +26,7 @@ html,body
     box-sizing: border-box
     text-decoration: none
     list-style-type: none
-    border: 1px solid black
+    // border: 1px solid black
 
 
 #navbar
@@ -104,11 +104,9 @@ html,body
     +flex(space-evenly,center)
     flex:1
     margin-top: 1.6rem
-    border: 1px solid red
     margin: 1.2rem auto
     .item
         font-size: 1.2rem
-        border: 1px solid red
         span
             margin-left: .6rem
 
@@ -142,12 +140,28 @@ section.product
     margin-top: 2rem
     &:nth-child(2)
         flex-direction: row-reverse
-        
+    &:nth-child(1)
+        .Pic
+            img
+                +size(50%)    
     .Pic
         +size(30%)
-        border: 1px solid red
         text-align: center
         img
-            +size(50%)
+            +size(100%)
+
     .Content
         +size(50%)       
+
+footer
+    +size(100%,50vh)
+    +flex(space-between,center)
+    .info
+        +size(80%)
+        +flex(space-around,center)
+        flex: 1
+    .brands
+        +size(100%,10vh)
+        +flex(space-around,center)
+        font-size: 1rem
+        line-height: 1rem
