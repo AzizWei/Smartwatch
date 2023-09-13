@@ -1,0 +1,153 @@
+@mixin size($w,$h:$w,$bdrs:0)
+    width:$w
+    height:$h
+    border-radius:$bdrs
+
+@mixin flex($jc:center,$ai:center)
+    display: flex
+    flex-wrap: wrap
+    justify-content: $jc
+    align-items: $ai
+
+@mixin abposrb($r,$b)
+    position: absolute
+    right: $r
+    bottom: $b
+
+html,body
+    +size(100%)
+    position: relative
+    background: #eee !important
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style-type: none
+    border: 1px solid black
+
+
+#navbar
+    +size(100%,3rem)
+    +flex(space-evenly,start)
+    box-shadow: 0 0 2px rgba(black,0.6 )
+    .logo,.userBtn
+        font-size: 1.6rem
+        line-height: 1.6rem
+    ul  
+        +size(40%,2rem)
+        +flex(space-between,start)
+        line-height: 1.6rem
+        a
+            text-decoration: none
+            li
+                font-size: 1.2rem
+    .searchBar
+        +size(15%,2rem)
+        input
+            +size(85%,1.6rem,.2rem)
+
+.banner
+    +size(100%,30rem)
+    +flex(space-evenly,center)
+    margin-top: .6rem
+    position: relative
+    z-index: 1
+    .Txt
+        +size(40%,70%)
+        position: relative
+        border: 1px solid black
+        .badge
+            color: black
+            background-color: #fff
+            box-shadow: 0px 0px 10px rgba(black,.3)
+            font-size: 1.6rem
+            line-height: 3rem
+            +size(8rem,3rem,.6rem)
+            +flex
+            +abposrb(-20%,0)
+            span
+                font-size: .6rem
+                line-height: .6rem
+                margin-left: .2rem
+            
+    .Pic
+        +size(30%,25rem,.6rem)
+        background-color: #ffd86f
+        background-image: url("../images/watch.png")
+        background-size: 80%
+        background-position: center
+        background-repeat: no-repeat
+        // z-index: 1
+        position: relative
+
+        &::before,&::after
+            display: block
+            +size(60%,60%,.6rem)
+            position: absolute
+            z-index: -1
+
+        &::before
+            content: ""
+            border: .3rem solid #98a2b0
+            +abposrb(60%,50%)
+
+        &::after
+            content: ""
+            background-color: #df643d
+            +abposrb(-10%,-10%)
+
+.intro
+    +size(90%,5rem)
+    +flex(space-evenly,center)
+    flex:1
+    margin-top: 1.6rem
+    border: 1px solid red
+    margin: 1.2rem auto
+    .item
+        font-size: 1.2rem
+        border: 1px solid red
+        span
+            margin-left: .6rem
+
+
+// Swiper
+swiper-container 
+  width: 90%
+  height: 60%
+  margin: auto
+
+
+swiper-slide 
+  text-align: center
+  /* font-size: 18px */
+  background: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+swiper-slide img 
+  display: block
+  width: 60%
+  height:60%
+  object-fit: cover
+
+section.product
+    +size(100%,50%)
+    +flex(space-evenly,center)
+    margin-top: 2rem
+    &:nth-child(2)
+        flex-direction: row-reverse
+        
+    .Pic
+        +size(30%)
+        border: 1px solid red
+        text-align: center
+        img
+            +size(50%)
+    .Content
+        +size(50%)       
