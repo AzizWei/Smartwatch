@@ -13,22 +13,41 @@
 
   </style>
   <body>
+    <a href="#" id="uptotop"><i class="fa-solid fa-circle-up" ></i></a>
     <!-- nav -->
     <div class="navbar" id="navbar">
         <a href="#" class="logo"><img src="images/logo.png" alt=""></i></a>
         <ul>
-            <a href=""><li>Features</li></a>
-            <a href=""><li>Picking</li></a>
-            <a href=""><li>Collection</li></a>
-            <a href=""><li>About</li></a>
+            <a href="#"><li>Features</li></a>
+            <a href="#Picking"><li>Picking</li></a>
+            <a href="#Collection"><li>Collection</li></a>
+            <a href="#About"><li>About</li></a>
         </ul>
         <div class="searchBar">
             <input type="text">
             <button class="fa-solid fa-magnifying-glass"></button>
         </div>
-
-        <a href="" class="userBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <button id="loginBtn" class="fa-solid fa-circle-user"></button>
     </div>
+    <!-- LOGIN -->
+    <form class="login" >
+      <h1>Login</h1>
+      <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="container">
+        <div class="wrap">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username" >
+        </div>
+        <div class="wrap">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="Password" >
+        </div>
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </p>
+      </div>
+    </form>
 
     <div class="banner">
         <div class="Txt">
@@ -54,10 +73,10 @@
 
     <!-- swiper -->
     <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
-    slides-per-view="3">
+    slides-per-view="3" id="Picking">
       <swiper-slide>
         <img src="images/s5.png" alt="">
-        <h5>Apple Watch Series 5</h5>
+        <h5>Smart Watch Series 5</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -70,7 +89,7 @@
       </swiper-slide>
       <swiper-slide>
         <img src="images/s6.png" alt="">
-        <h5>Apple Watch Series 6</h5>
+        <h5>Smart Watch Series 6</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -83,7 +102,7 @@
       </swiper-slide>
       <swiper-slide>
         <img src="images/s7.png" alt="">
-        <h5>Apple Watch Series 7</h5>
+        <h5>Smart Watch Series 7</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -96,7 +115,7 @@
       </swiper-slide>
       <swiper-slide>
         <img src="images/s8.png" alt="">
-        <h5>Apple Watch Series 8</h5>
+        <h5>Smart Watch Series 8</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -109,7 +128,7 @@
       </swiper-slide>
       <swiper-slide>
         <img src="images/se.png" alt="">
-        <h5>Apple Watch SE</h5>
+        <h5>Smart Watch SE</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -120,9 +139,10 @@
           <button>Buy Now</button>
         </div>
       </swiper-slide>
+
       <swiper-slide>
         <img src="images/ultra.png" alt="">
-        <h5>Apple Watch Ultra</h5>
+        <h5>Smart Watch Ultra</h5>
         <p>NT.100</p>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -135,7 +155,7 @@
       </swiper-slide>
     </swiper-container>
 
-    <main>
+    <main id="Collection">
       <section class="product">
         <div class="Pic">
           <div class="cir"></div>
@@ -170,7 +190,9 @@
         </div>
       </section>
     </main>
-    <footer>
+
+
+    <footer id="About">
       <div class="info">
         <div class="services">
           <h5>Services</h5>
@@ -185,7 +207,7 @@
           <p>Job Opportunities</p>
         </div>
         <div class="contact">
-          <h5>About us</h5>
+          <h5>Contact</h5>
           <p>abc road -1234567</p>
           <p>+886 12345678</p>
           <p>abc123@gmail.com</p>
@@ -194,18 +216,18 @@
       <div class="brands">
         <p>Copyright © 2023 by Wesley Wang / S.C.WANG | All rights Reserved.</p>
         <div class="logo">
-          <i class="fa-solid fa-clock"></i>
+          <img src="images/logo.png" alt="">
           <i class="fa-brands fa-square-facebook"></i>
           <i class="fa-brands fa-square-twitter"></i>
-          <i class="fa-brands fa-linkedin"></i> 
+          <i class="fa-brands fa-square-youtube"></i> 
           <i class="fa-brands fa-square-instagram"></i>
         </div>
       </div>
     </footer>
-    <script src="js/script.js"> </script>
     <script src="js/all.min.js"></script>
-    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/script.js"> </script>
   </body>
 </html>

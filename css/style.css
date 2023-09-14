@@ -16,6 +16,19 @@ html, body {
   font-family: "Kanit", sans-serif;
 }
 
+[class^=fa] {
+  color: #f19619 !important;
+}
+
+#uptotop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 3rem;
+  color: #f19619;
+}
+
 #navbar {
   width: 100%;
   height: 10vh;
@@ -24,6 +37,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   margin-bottom: 2rem;
 }
@@ -45,6 +59,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   line-height: 1.6rem;
 }
 #navbar ul a {
@@ -71,6 +86,84 @@ html, body {
   height: 1.6rem;
   border-radius: 0.2rem;
 }
+#navbar #loginBtn {
+  font-size: 1.5rem;
+  color: #f19619;
+  cursor: pointer;
+}
+
+form.login {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #98a2b0;
+  font-size: 1rem;
+  width: 25%;
+  height: 40%;
+  border-radius: 1rem;
+  min-height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #efe1be;
+  color: black;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 999;
+}
+form.login h1 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(241, 150, 25, 0.6);
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0;
+}
+form.login .container {
+  margin-top: 5rem;
+  text-align: center;
+}
+form.login #closeBtn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: -1rem;
+  top: -0.5rem;
+  border: none;
+  cursor: pointer;
+}
+form.login input {
+  width: 80%;
+  height: 2rem;
+  border-radius: 0;
+  margin-top: 0.5rem;
+  border-radius: 5rem;
+  padding-left: 1rem;
+  color: #000;
+}
+form.login button {
+  width: 5rem;
+  height: 30px;
+  border-radius: 0;
+  display: inline-block;
+  line-height: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  font-weight: normal;
+  margin-top: 1.2rem;
+  margin-right: 0.5rem;
+}
+form.login button:hover {
+  background-color: #f19619;
+  color: white;
+  border: 0px;
+}
 
 .banner {
   width: 100%;
@@ -80,6 +173,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   margin-top: 0.6rem;
   position: relative;
   z-index: 1;
@@ -112,6 +206,16 @@ html, body {
   font-weight: bold;
   border-radius: 0.2rem;
 }
+.banner .Txt p a.signin:hover {
+  background-color: #f19619;
+  color: white;
+  border: 0px;
+}
+.banner .Txt p a.signin:hover {
+  background-color: transparent;
+  color: red;
+  border: 0px;
+}
 .banner .Txt a.btn {
   color: black;
   border: 2px solid black;
@@ -124,6 +228,11 @@ html, body {
   text-align: center;
   font-weight: bold;
   border-radius: 0.2rem;
+}
+.banner .Txt a.btn:hover {
+  background-color: #f19619;
+  color: white;
+  border: 0px;
 }
 .banner .Txt a.btn:hover {
   background-color: #f19619;
@@ -143,6 +252,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   position: absolute;
   right: -20%;
   bottom: 0;
@@ -192,6 +302,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   background-color: white;
   color: black;
   flex: 1;
@@ -233,4006 +344,4023 @@ swiper-slide {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+swiper-slide button {
+  margin-left: 1.5rem;
+  width: 100px;
+  height: 35px;
+  border-radius: 0;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+swiper-slide button:hover {
+  background-color: #f19619;
+  color: white;
+  border: 0px;
 }
 
 swiper-slide:nth-child(1) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(2) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(3) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(4) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(5) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(6) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(7) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(8) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(9) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(10) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(11) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(12) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(13) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(14) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(15) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(16) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(17) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(18) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(19) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(20) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(21) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(22) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(23) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(24) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(25) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(26) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(27) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(28) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(29) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(30) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(31) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(32) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(33) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(34) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(35) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(36) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(37) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(38) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(39) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(40) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(41) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(42) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(43) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(44) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(45) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(46) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(47) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(48) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(49) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(50) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(51) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(52) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(53) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(54) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(55) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(56) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(57) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(58) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(59) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(60) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(61) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(62) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(63) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(64) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(65) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(66) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(67) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(68) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(69) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(70) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(71) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(72) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(73) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(74) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(75) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(76) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(77) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(78) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(79) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(80) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(81) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(82) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(83) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(84) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(85) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(86) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(87) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(88) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(89) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(90) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(91) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(92) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(93) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(94) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(95) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(96) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(97) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(98) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(99) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(100) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(101) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(102) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(103) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(104) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(105) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(106) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(107) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(108) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(109) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(110) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(111) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(112) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(113) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(114) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(115) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(116) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(117) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(118) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(119) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(120) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(121) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(122) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(123) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(124) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(125) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(126) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(127) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(128) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(129) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(130) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(131) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(132) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(133) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(134) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(135) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(136) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(137) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(138) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(139) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(140) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(141) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(142) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(143) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(144) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(145) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(146) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(147) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(148) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(149) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(150) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(151) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(152) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(153) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(154) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(155) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(156) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(157) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(158) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(159) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(160) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(161) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(162) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(163) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(164) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(165) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(166) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(167) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(168) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(169) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(170) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(171) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(172) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(173) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(174) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(175) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(176) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(177) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(178) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(179) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(180) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(181) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(182) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(183) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(184) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(185) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(186) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(187) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(188) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(189) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(190) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(191) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(192) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(193) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(194) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(195) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(196) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(197) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(198) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(199) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(200) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(201) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(202) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(203) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(204) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(205) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(206) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(207) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(208) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(209) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(210) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(211) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(212) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(213) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(214) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(215) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(216) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(217) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(218) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(219) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(220) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(221) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(222) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(223) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(224) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(225) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(226) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(227) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(228) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(229) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(230) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(231) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(232) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(233) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(234) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(235) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(236) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(237) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(238) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(239) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(240) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(241) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(242) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(243) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(244) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(245) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(246) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(247) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(248) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(249) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(250) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(251) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(252) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(253) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(254) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(255) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(256) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(257) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(258) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(259) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(260) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(261) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(262) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(263) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(264) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(265) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(266) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(267) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(268) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(269) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(270) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(271) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(272) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(273) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(274) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(275) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(276) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(277) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(278) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(279) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(280) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(281) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(282) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(283) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(284) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(285) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(286) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(287) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(288) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(289) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(290) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(291) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(292) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(293) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(294) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(295) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(296) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(297) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(298) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(299) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(300) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(301) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(302) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(303) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(304) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(305) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(306) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(307) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(308) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(309) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(310) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(311) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(312) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(313) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(314) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(315) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(316) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(317) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(318) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(319) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(320) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(321) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(322) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(323) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(324) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(325) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(326) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(327) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(328) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(329) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(330) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(331) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(332) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(333) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(334) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(335) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(336) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(337) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(338) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(339) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(340) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(341) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(342) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(343) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(344) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(345) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(346) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(347) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(348) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(349) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(350) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(351) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(352) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(353) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(354) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(355) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(356) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(357) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(358) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(359) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(360) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(361) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(362) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(363) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(364) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(365) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(366) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(367) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(368) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(369) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(370) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(371) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(372) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(373) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(374) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(375) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(376) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(377) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(378) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(379) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(380) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(381) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(382) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(383) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(384) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(385) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(386) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(387) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(388) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(389) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(390) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(391) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(392) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(393) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(394) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(395) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(396) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(397) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(398) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(399) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(400) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(401) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(402) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(403) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(404) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(405) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(406) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(407) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(408) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(409) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(410) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(411) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(412) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(413) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(414) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(415) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(416) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(417) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(418) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(419) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(420) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(421) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(422) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(423) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(424) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(425) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(426) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(427) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(428) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(429) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(430) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(431) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(432) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(433) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(434) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(435) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(436) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(437) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(438) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(439) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(440) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(441) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(442) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(443) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(444) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(445) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(446) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(447) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(448) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(449) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(450) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(451) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(452) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(453) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(454) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(455) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(456) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(457) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(458) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(459) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(460) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(461) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(462) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(463) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(464) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(465) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(466) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(467) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(468) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(469) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(470) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(471) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(472) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(473) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(474) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(475) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(476) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(477) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(478) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(479) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(480) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(481) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(482) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(483) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(484) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(485) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(486) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(487) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(488) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(489) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(490) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(491) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(492) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(493) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(494) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(495) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(496) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(497) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(498) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(499) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(500) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(501) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(502) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(503) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(504) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(505) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(506) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(507) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(508) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(509) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(510) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(511) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(512) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(513) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(514) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(515) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(516) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(517) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(518) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(519) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(520) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(521) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(522) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(523) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(524) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(525) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(526) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(527) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(528) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(529) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(530) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(531) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(532) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(533) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(534) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(535) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(536) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(537) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(538) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(539) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(540) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(541) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(542) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(543) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(544) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(545) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(546) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(547) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(548) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(549) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(550) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(551) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(552) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(553) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(554) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(555) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(556) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(557) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(558) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(559) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(560) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(561) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(562) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(563) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(564) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(565) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(566) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(567) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(568) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(569) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(570) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(571) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(572) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(573) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(574) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(575) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(576) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(577) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(578) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(579) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(580) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(581) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(582) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(583) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(584) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(585) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(586) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(587) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(588) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(589) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(590) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(591) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(592) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(593) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(594) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(595) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(596) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(597) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(598) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(599) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(600) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(601) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(602) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(603) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(604) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(605) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(606) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(607) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(608) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(609) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(610) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(611) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(612) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(613) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(614) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(615) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(616) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(617) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(618) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(619) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(620) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(621) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(622) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(623) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(624) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(625) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(626) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(627) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(628) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(629) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(630) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(631) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(632) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(633) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(634) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(635) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(636) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(637) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(638) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(639) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(640) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(641) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(642) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(643) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(644) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(645) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(646) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(647) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(648) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(649) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(650) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(651) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(652) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(653) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(654) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(655) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(656) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(657) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(658) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(659) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(660) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(661) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(662) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(663) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(664) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(665) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(666) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(667) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(668) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(669) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(670) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(671) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(672) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(673) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(674) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(675) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(676) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(677) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(678) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(679) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(680) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(681) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(682) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(683) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(684) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(685) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(686) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(687) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(688) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(689) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(690) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(691) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(692) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(693) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(694) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(695) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(696) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(697) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(698) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(699) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(700) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(701) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(702) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(703) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(704) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(705) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(706) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(707) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(708) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(709) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(710) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(711) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(712) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(713) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(714) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(715) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(716) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(717) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(718) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(719) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(720) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(721) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(722) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(723) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(724) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(725) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(726) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(727) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(728) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(729) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(730) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(731) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(732) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(733) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(734) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(735) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(736) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(737) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(738) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(739) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(740) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(741) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(742) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(743) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(744) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(745) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(746) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(747) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(748) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(749) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(750) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(751) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(752) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(753) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(754) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(755) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(756) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(757) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(758) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(759) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(760) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(761) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(762) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(763) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(764) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(765) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(766) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(767) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(768) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(769) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(770) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(771) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(772) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(773) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(774) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(775) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(776) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(777) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(778) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(779) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(780) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(781) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(782) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(783) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(784) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(785) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(786) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(787) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(788) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(789) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(790) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(791) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(792) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(793) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(794) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(795) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(796) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(797) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(798) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(799) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(800) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(801) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(802) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(803) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(804) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(805) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(806) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(807) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(808) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(809) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(810) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(811) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(812) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(813) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(814) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(815) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(816) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(817) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(818) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(819) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(820) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(821) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(822) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(823) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(824) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(825) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(826) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(827) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(828) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(829) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(830) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(831) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(832) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(833) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(834) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(835) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(836) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(837) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(838) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(839) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(840) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(841) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(842) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(843) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(844) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(845) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(846) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(847) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(848) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(849) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(850) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(851) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(852) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(853) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(854) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(855) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(856) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(857) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(858) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(859) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(860) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(861) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(862) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(863) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(864) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(865) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(866) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(867) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(868) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(869) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(870) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(871) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(872) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(873) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(874) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(875) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(876) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(877) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(878) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(879) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(880) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(881) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(882) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(883) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(884) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(885) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(886) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(887) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(888) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(889) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(890) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(891) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(892) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(893) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(894) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(895) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(896) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(897) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(898) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(899) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(900) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(901) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(902) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(903) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(904) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(905) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(906) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(907) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(908) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(909) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(910) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(911) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(912) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(913) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(914) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(915) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(916) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(917) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(918) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(919) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(920) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(921) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(922) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(923) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(924) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(925) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(926) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(927) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(928) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(929) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(930) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(931) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(932) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(933) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(934) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(935) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(936) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(937) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(938) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(939) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(940) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(941) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(942) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(943) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(944) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(945) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(946) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(947) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(948) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(949) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(950) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(951) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(952) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(953) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(954) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(955) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(956) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(957) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(958) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(959) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(960) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(961) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(962) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(963) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(964) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(965) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(966) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(967) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(968) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(969) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(970) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(971) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(972) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(973) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(974) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(975) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(976) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(977) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(978) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(979) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(980) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(981) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(982) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(983) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(984) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(985) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(986) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(987) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(988) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(989) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(990) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(991) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(992) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(993) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(994) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(995) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(996) {
-  background: rgba(255, 216, 111, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide:nth-child(997) {
-  background: rgba(25, 95, 164, 0.5);
+  background: rgba(25, 95, 164, 0.3);
 }
 
 swiper-slide:nth-child(998) {
-  background: rgba(252, 132, 118, 0.5);
+  background: rgba(252, 132, 118, 0.3);
 }
 
 swiper-slide:nth-child(999) {
-  background: rgba(239, 225, 190, 0.5);
+  background: rgba(239, 225, 190, 0.3);
 }
 
 swiper-slide:nth-child(1000) {
-  background: rgba(241, 150, 25, 0.5);
+  background: rgba(255, 216, 111, 0.3);
 }
 
 swiper-slide img {
@@ -4245,6 +4373,11 @@ swiper-slide img {
   padding: 2rem;
 }
 
+main {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 section.product {
   width: 100%;
   height: 50%;
@@ -4253,6 +4386,7 @@ section.product {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   margin-top: 2rem;
 }
 section.product:nth-child(2) {
@@ -4278,6 +4412,21 @@ section.product .Content {
   width: 50%;
   height: 50%;
   border-radius: 0;
+}
+section.product .Content button {
+  width: 150px;
+  height: 50px;
+  border-radius: 0;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+section.product .Content button:hover {
+  background-color: #f19619;
+  color: white;
+  border: 0px;
 }
 
 section.product {
@@ -4326,6 +4475,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 }
 footer .info {
@@ -4336,6 +4486,7 @@ footer .info {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   flex: 1;
 }
 footer .info::after {
@@ -4346,14 +4497,33 @@ footer .info::after {
   border-radius: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+footer .info h5 {
+  font-weight: bolder;
+  margin-bottom: 1.2rem;
+}
 footer .brands {
   width: 100%;
   height: 10vh;
+  border-radius: 0;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+footer .brands .logo {
+  font-size: 1.5rem;
+  width: 20%;
+  height: 20%;
   border-radius: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  font-size: 1rem;
-  line-height: 1rem;
+  flex-direction: row;
+}
+footer .brands .logo img {
+  width: 100px;
+  margin-right: 1.2rem;
 }

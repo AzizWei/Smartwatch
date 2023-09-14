@@ -7,7 +7,8 @@ $colorBlue:#195fa4
 $colorPink:#fc8476
 $colorLightbrown:#efe1be
 $colorTxt:white
-$colors:($colorOrange,$colorYellow,$colorBlue,$colorPink,$colorLightbrown)  
+$bgcolor:#faf9f5 
+$colors:($colorYellow,$colorBlue,$colorPink,$colorLightbrown)  
 
 
 
@@ -16,11 +17,12 @@ $colors:($colorOrange,$colorYellow,$colorBlue,$colorPink,$colorLightbrown)
     height:$h
     border-radius:$bdrs
 
-@mixin flex($jc:center,$ai:center)
+@mixin flex($jc:center,$ai:center,$fd:row)
     display: flex
     flex-wrap: wrap
     justify-content: $jc
     align-items: $ai
+    flex-direction: $fd
 
 @mixin abposrb($r,$b)
     position: absolute
@@ -43,12 +45,15 @@ $colors:($colorOrange,$colorYellow,$colorBlue,$colorPink,$colorLightbrown)
     text-align: center
     font-weight: bold
     border-radius: .2rem
+    &:hover
+        +color($colorOrange,$colorTxt)
+        border: 0px
 
     
 html,body
     +size(100%)
     position: relative
-    background: #faf9f5 !important
+    background: $bgcolor !important
 
 
 *
@@ -59,6 +64,17 @@ html,body
     list-style-type: none
     font-family: 'Kanit', sans-serif
     // border: 1px solid black
+
+[class^="fa"]
+    color: $colorOrange !important
+
+#uptotop
+  position: fixed
+  bottom: 0
+  right: 0
+  margin: 1rem
+  font-size: 3rem
+  color: $colorOrange
 
 
 #navbar
@@ -90,6 +106,60 @@ html,body
         +size(15%,2rem)
         input
             +size(85%,1.6rem,.2rem)
+    #loginBtn
+        font-size: 1.5rem
+        color: $colorOrange
+        cursor: pointer
+
+form.login
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    border:2px solid #98a2b0
+    font-size: 1rem
+    +size(25%,40%,1rem)
+    min-height: 300px
+    +abposlt(50%,50%)
+    +color($colorLightbrown,black)
+    transform: translate(-50%,-50%)
+    overflow: hidden
+    z-index: 999
+
+    h1
+        width: 100%
+        +abposlt(0,0)
+        +color(rgba($colorOrange,.6),$colorTxt)
+        text-align: center
+        margin-bottom: 1rem
+        padding: .6rem 0
+    .container
+        margin-top: 5rem
+        text-align: center
+        
+    #closeBtn
+        +color(transparent,$colorTxt)
+        font-size: 2rem
+        position: absolute
+        right: -1rem
+        top: -.5rem
+        border: none
+        cursor: pointer
+  
+    input
+        +size(80%,2rem)
+        margin-top: .5rem
+        border-radius:5rem 
+        padding-left: 1rem
+        color: #000
+  
+    button
+        +btn(5rem,30px)
+        font-weight: normal
+        margin: 
+            top:1.2rem
+            right: .5rem 
+
 
 .banner
     +size(100%,30rem)
@@ -111,6 +181,9 @@ html,body
                 +color(transparent,red)
                 border: 0px
                 +btn(5rem)
+                &:hover
+                    +color(transparent,red)
+                    border: 0px
 
         a.btn
             color: black  
@@ -186,7 +259,7 @@ html,body
 
 
 // Swiper
-$sliderbgc:nth($colors,random(5))
+
 
 swiper-container 
     width: 90%
@@ -197,7 +270,10 @@ swiper-container
 swiper-slide
     text-align: center
     flex-direction: column
-    +flex
+    +flex(center,center,column)
+    button
+        margin-left: 1.5rem
+        +btn(100px,35px)
 
 
 
@@ -205,7 +281,7 @@ $numColors: length($colors)
 
 @for $i from 1 through 1000  
   swiper-slide:nth-child(#{$i}) 
-    background: rgba( nth($colors, $i % $numColors + 1)  , .5 )
+    background: rgba( nth($colors, $i % $numColors + 1)  , .3 )
   
 
 swiper-slide img 
@@ -217,7 +293,10 @@ swiper-slide img
     padding: 2rem
 
 
-
+main
+    margin: 
+        top: 5rem
+        bottom: 5rem
 section.product
     +size(100%,50%)
     +flex(space-evenly,center)
@@ -235,7 +314,9 @@ section.product
             +size(100%)
 
     .Content
-        +size(50%)       
+        +size(50%)  
+        button
+            +btn     
 
 section.product
     margin-top: 3rem
@@ -275,9 +356,18 @@ footer
             display: block
             +size(80%,1px)
             border-top: 1px solid rgba(black,0.2)
+        h5
+            font-weight: bolder
+            margin-bottom: 1.2rem
             
     .brands
         +size(100%,10vh)
-        +flex(space-around,center)
         font-size: 1rem
-        line-height: 1rem
+        +flex(space-around,center)
+        .logo
+            font-size: 1.5rem
+            +size(20%)
+            +flex(space-around,center)
+            img
+                width: 100px
+                margin-right: 1.2rem
