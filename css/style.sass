@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap')
+
+    
+$colorOrange : #f19619
+$colorYellow:#ffd86f
+$colorBlue:#195fa4
+$colorPink:#fc8476
+$colorLightbrown:#efe1be
+$colorTxt:white
+$colors:($colorOrange,$colorYellow,$colorBlue,$colorPink,$colorLightbrown)  
+
+
+
 @mixin size($w,$h:$w,$bdrs:0)
     width:$w
     height:$h
@@ -14,34 +27,63 @@
     right: $r
     bottom: $b
 
+@mixin abposlt($l,$t)
+    position: absolute
+    left: $l
+    top: $t
+
+@mixin color($bgc,$c:black)
+    background-color: $bgc
+    color: $c
+
+@mixin btn($w:150px,$h:50px)
+    +size($w,$h)
+    display: inline-block
+    line-height: $h - 15px
+    text-align: center
+    font-weight: bold
+    border-radius: .2rem
+
+    
 html,body
     +size(100%)
     position: relative
-    background: #eee !important
+    background: #faf9f5 !important
 
 
 *
     margin: 0
     padding: 0
-    box-sizing: border-box
-    text-decoration: none
+    box-sizing: border-box !important
+    text-decoration: none !important
     list-style-type: none
+    font-family: 'Kanit', sans-serif
     // border: 1px solid black
 
 
 #navbar
-    +size(100%,3rem)
-    +flex(space-evenly,start)
-    box-shadow: 0 0 2px rgba(black,0.6 )
-    .logo,.userBtn
-        font-size: 1.6rem
-        line-height: 1.6rem
+    +size(100%,10vh)
+    +flex(space-evenly,center)
+    box-shadow: 0 0 2px rgba(black,0.6)
+    margin-bottom: 2rem
+    .logo
+        width: 10%
+        img
+            width: 100%
+            min-width: 100px
+    .userBtn
+        font-size: 1.5rem
     ul  
-        +size(40%,2rem)
-        +flex(space-between,start)
+        +size(60%,2rem)
+        +flex
         line-height: 1.6rem
         a
-            text-decoration: none
+            +size(150px,9vh)
+            color: black
+            padding: .6rem
+            text-align: center
+            &:hover
+                box-shadow: inset 0 -.2rem $colorOrange
             li
                 font-size: 1.2rem
     .searchBar
@@ -58,7 +100,27 @@ html,body
     .Txt
         +size(40%,70%)
         position: relative
-        border: 1px solid black
+        h1,h2
+            font-weight: bolder
+            letter-spacing: 1px
+            color: $colorOrange
+        p
+            letter-spacing: 1px
+            a.signin
+                font-weight: bold
+                +color(transparent,red)
+                border: 0px
+                +btn(5rem)
+
+        a.btn
+            color: black  
+            border: 2px solid black
+            margin-right: 1rem
+            +btn
+            &:hover
+                +color($colorOrange,$colorTxt)
+                border: 0px
+
         .badge
             color: black
             background-color: #fff
@@ -75,7 +137,7 @@ html,body
             
     .Pic
         +size(30%,25rem,.6rem)
-        background-color: #ffd86f
+        background-color: $colorYellow
         background-image: url("../images/watch.png")
         background-size: 80%
         background-position: center
@@ -96,43 +158,65 @@ html,body
 
         &::after
             content: ""
-            background-color: #df643d
+            background-color: $colorOrange
             +abposrb(-10%,-10%)
 
 .intro
-    +size(90%,5rem)
+    width: 90%
     +flex(space-evenly,center)
+    +color(white,black)
     flex:1
     margin-top: 1.6rem
-    margin: 1.2rem auto
+    margin: 5rem auto
+    padding: 2rem
+    box-shadow: 10px 10px 20px rgba(black,.2)
+
     .item
         font-size: 1.2rem
+        padding: .8rem
+        &:nth-child(1)
+            +color(#cbe7fa)
+        &:nth-child(2)
+            +color(#fce2de)
+        &:nth-child(3)
+            +color(#fde8c1)
+            
         span
             margin-left: .6rem
 
 
 // Swiper
+$sliderbgc:nth($colors,random(5))
+
 swiper-container 
-  width: 90%
-  height: 60%
-  margin: auto
+    width: 90%
+    height: 60%
+    margin:2rem auto
 
 
-swiper-slide 
-  text-align: center
-  /* font-size: 18px */
-  background: #fff
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
+swiper-slide
+    text-align: center
+    flex-direction: column
+    +flex
 
+
+
+$numColors: length($colors)
+
+@for $i from 1 through 1000  
+  swiper-slide:nth-child(#{$i}) 
+    background: rgba( nth($colors, $i % $numColors + 1)  , .5 )
+  
 
 swiper-slide img 
-  display: block
-  width: 60%
-  height:60%
-  object-fit: cover
+    background: white
+    display: block
+    width: 60%
+    height:60%
+    object-fit: cover
+    padding: 2rem
+
+
 
 section.product
     +size(100%,50%)
@@ -153,13 +237,45 @@ section.product
     .Content
         +size(50%)       
 
+section.product
+    margin-top: 3rem
+    .Pic
+        position: relative
+        .cir
+            +size(15rem,15rem,50%)
+            background-color: $colorOrange
+            z-index: -1
+            +abposrb(50%,50%)
+            transform: translate(50%,50%)
+            &::before,&::after
+                content: ""
+                display: block
+                +abposrb(50%,50%)
+                transform: translate(50%,50%)
+            &::before
+                +size(18rem,18rem,50%)
+                background-color: rgba($colorOrange,.5 ) 
+            &::after
+                +size(21rem,21rem,50%)
+                background-color: rgba($colorOrange,.3 ) 
+                
+
+            
+
 footer
     +size(100%,50vh)
     +flex(space-between,center)
+    box-shadow: 0 0 3px rgba(black,0.6)
     .info
         +size(80%)
         +flex(space-around,center)
         flex: 1
+        &::after
+            content: ""
+            display: block
+            +size(80%,1px)
+            border-top: 1px solid rgba(black,0.2)
+            
     .brands
         +size(100%,10vh)
         +flex(space-around,center)
